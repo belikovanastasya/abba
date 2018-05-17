@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">	
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name ="apple-mobile-web-app-status-bar-style" content ="#000000">
+	<meta name="description" content="" />
+	<title>Page</title>
+</head>
+<body>
+@require('./templates/main/header.html')
+	<!-- PJAX CONTAINER START -->
+	<div id="barba-wrapper">
+		<div class="barba-container" data-namespace="main">			
+				@require('./templates/pages/main_page.html')		
+		</div>
+	</div>
+	<!-- PJAX CONTAINER END -->
+@require('./templates/main/footer.html')
+</body>
+</html>
